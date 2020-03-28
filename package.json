@@ -8,6 +8,7 @@
   },
   "license": "MIT",
   "name": "sentry-issue-retriever",
+  "private": true,
   "scripts": {
     "start": "node main.js"
   }
