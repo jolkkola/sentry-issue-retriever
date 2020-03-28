@@ -1,6 +1,14 @@
 {
+  "author": {
+    "name": "Joona Olkkola"
+  },
   "dependencies": {
     "dotenv": "^8.2.0",
     "node-fetch": "^2.6.0"
+  },
+  "license": "MIT",
+  "name": "sentry-issue-retriever",
+  "scripts": {
+    "start": "node main.js"
   }
 }
