@@ -1,4 +1,4 @@
-# Sentry.io project issue retriever
+# Sentry.io Project Issue Retriever
 
 This is a simple tool to retrieve issues in JSON format for a single project from Sentry's API. It was made for handling CSP (Content Security Policy) reports, so a bunch of the fields available from the API will get dropped. See the function `parseIssueData` for details.
 
@@ -27,3 +27,13 @@ See the `.env.example` file for available values.
 - results should appear after a while in `results.json`
 
 You can use [json2csv](https://www.npmjs.com/package/json2csv) or some other tool to format the resulting json as csv.
+
+## Available Scripts
+
+### `yarn csv`
+
+Generates a csv file using the previously retrieved results. Expects `results.json` to exist, writes the results to the `results.csv` file. Uses [json2csv](https://www.npmjs.com/package/json2csv) to accomplish this.
+
+### `yarn start`
+
+Retrieves all available issues from the API. Writes the results to the `results.json` file.
