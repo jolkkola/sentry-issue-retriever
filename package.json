@@ -4,12 +4,14 @@
   },
   "dependencies": {
     "dotenv": "^8.2.0",
+    "json2csv": "^5.0.0",
     "node-fetch": "^2.6.0"
   },
   "license": "MIT",
   "name": "sentry-issue-retriever",
   "private": true,
   "scripts": {
+    "csv": "yarn json2csv -i results.json -o results.csv",
     "start": "node main.js"
   }
 }
